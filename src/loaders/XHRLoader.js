@@ -68,7 +68,7 @@ THREE.XHRLoader.prototype = {
 		if ( this.crossOrigin !== undefined ) request.crossOrigin = this.crossOrigin;
 		if ( this.responseType !== undefined ) request.responseType = this.responseType;
 		if ( this.withCredentials !== undefined ) request.withCredentials = this.withCredentials;
-		if ( this.authorizationHeader !== undefined ) request.setRequestHeader( this.authorizationHeader );
+		if ( this.authorizationHeader !== undefined ) request.setRequestHeader( 'Authorization', this.authorizationHeader );
 
 		request.send( null );
 
