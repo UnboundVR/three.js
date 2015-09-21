@@ -1,21 +1,3 @@
-function ( root, factory ) {
-
-	if ( typeof define === 'function' && define.amd ) {
-
-		define( [ 'exports' ], factory );
-
-	} else if ( typeof exports === 'object' ) {
-
-		factory( exports );
-
-	} else {
-
-		factory( root );
-
-	}
-
-}( this, function ( exports ) {
-
 // File:src/Three.js
 
 /**
@@ -35987,6 +35969,3 @@ THREE.MorphBlendMesh.prototype.update = function ( delta ) {
 
 };
 
-exports.THREE = THREE;
-
-} ) );
